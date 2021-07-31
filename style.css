@@ -1,0 +1,144 @@
+
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 25px;
+	line-height: 1.9;
+	font-family: "merienda",cursive;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #dd5f2e;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+  border-radius: 71% 29% 70% 30% / 0% 100% 0% 100% ;
+}
+.navbar-nav a {
+	font-family: "merienda",cursive;
+	font-size: 23px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 23px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+  font-family: "merienda",cursive;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #dd5f2e;
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+.home-top-deals-3 {
+  background-color: #281926a6;
+  height: 80vh;
+  width: 100vw;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #281926;
+}
+.home-top-deals-3 img {
+  height: 120px;
+  width: 120px;
+}
+.home-top-deals-3 .fa {
+  font-size: 2rem;
+}
+.home-top-deals-3 .carousel-inner {
+  width: 90%;
+  left: 7%;
+}
+.home-top-deals-3 .carousel-control-next,
+.home-top-deals-3 .carousel-control-prev {
+  opacity: 0.7;
+  width: 0%;
+  color: #281926;
+  position: absolute;
+}
+
+.jumbotron2 {
+  position: relative;
+  padding: 7rem 0;
+  border-bottom: 1px solid #281926;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("./pizzatypes/bgcarmelitas.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "merienda",cursive;
+}
+.jumbotron2 h1 {
+  font-family: "merienda", cursive;
+  font-size: 4rem;
+}
+.jumbotron2 .container {
+  max-width: 40rem;
+  position: relative;
+  z-index: 2;
+}
+.jumbotron2 .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1;
+}

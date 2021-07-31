@@ -85,4 +85,13 @@ body{
 	line-height: 1.9;
 	font-family: poppins;
 }
+
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
 /* End of banner carousel section */

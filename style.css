@@ -77,4 +77,12 @@ body{
 	margin-top: 25px;
 	font-family: merienda;
 }
+
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 25px;
+	line-height: 1.9;
+	font-family: poppins;
+}
 /* End of banner carousel section */

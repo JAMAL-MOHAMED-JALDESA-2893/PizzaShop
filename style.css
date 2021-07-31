@@ -61,5 +61,11 @@ body{
 /* End of navigation */
 
 /* carousel banner section */
-
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
 /* End of banner carousel section */

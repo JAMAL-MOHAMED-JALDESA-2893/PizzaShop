@@ -59,52 +59,83 @@ Order.prototype.getSize = function () {
 
 // prototypes for crust and toppings prices.
 
-Order.prototype.getCrust = function () {
-  if (this.crust === 0) {
+Order.prototype.getCrust = function () 
+
+   {
+  if (this.crust === 0)
+   {
     return 100;
-  } else if (this.crust === 1) {
+  } 
+  else if (this.crust === 1)
+   {
     return 50;
-  } else if (this.crust === 2) {
+  }
+   else if (this.crust === 2) 
+   {
     return 200;
   }
 };
 
-Order.prototype.getTopping = function () {
-  if (this.topping === 0) {
+Order.prototype.getTopping = function ()
+   
+     {
+  if (this.topping === 0)
+     {
     return 300;
-  } else if (this.topping === 1) {
+  } 
+  else if (this.topping === 1) 
+  {
     return 50;
-  } else if (this.topping === 2) {
+  } 
+  else if (this.topping === 2) 
+  {
     return 200;
-  } else if (this.topping === 3) {
+  }
+   else if (this.topping === 3)
+    {
     return 100;
   }
 };
 
-function fullBill() {
+// bill yako function for full bill
+
+function billYako() {
   var sum = 0;
-  $(".billPerOrder").each(function () {
+
+  $(".billPerOrder").each(() => {
     var value = $(this).text();
-    if (!isNaN(value) && value.length != 0) {
+
+    if (!isNaN(value) && value.length != 0) 
+    {
       sum += parseFloat(value);
     }
   });
-  if (document.getElementById("yes").checked) {
-    var result =
-      "Your order is Ksh. " + sum + " with a delivery fee of Ksh. 200 ";
+  if (document.getElementById("yes").checked) 
+      
+       {
+    var result = `Your order cost is Ksh ${sum} plus a delivery fee of Ksh 200 `;
     var orderBill = sum + 200;
-    var total = "Total: Ksh. " + orderBill + " .00";
+    var total = "Total: Ksh. " + orderBill;
     $("#result").text(result);
     $("#totalCost").text(total);
 
     swal({
       title:
-        "Your order will be delivered to your Location at a fee of 200 shillings",
-      icon: "success",
+        "Note! Delivery of your order to location specified will cost ksh 200 extra",
+      icon: "",
     });
   } else {
-    var total = "Total: Ksh. " + sum + " .00";
+    var total = "Total: Ksh. " + sum;
     $("#totalCost").text(total);
   }
 }
 
+function checkout() {
+  swal({
+      title: `Order successfully placed 
+       Thank You and Welcome to carmelitas`,
+      icon: "success",
+  }).then((value) => {
+      location.reload();
+  });
+}

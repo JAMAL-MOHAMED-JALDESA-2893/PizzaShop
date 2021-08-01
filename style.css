@@ -163,3 +163,68 @@
     height: 120vh;
   }
 }
+
+/* order */
+
+#order {
+  background: url('./pizzatypes/bgcarmelitas.jpg') no-repeat fixed 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 ;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.657);
+  font-size: 18px;
+  display:flex;
+}
+
+#makeOrder {
+  padding: 3%;
+}
+
+.orderText {
+ 
+  color: white;
+  padding: 20px;
+}
+
+.form,
+.displayOrder {
+  padding: 4%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(180, 169, 169, 0.534);
+  background-color: rgba(24, 23, 23, 0.5);
+}
+
+label {
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.location,
+.displayOrder {
+  display: none;
+}
+
+th {
+  border: 1px solid rgb(170, 157, 157);
+}
+td{
+  color:rgb(250, 245, 245);
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+#bill {
+  height: 50px;
+  font-size: X-large;
+  font-weight: 700;
+
+}

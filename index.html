@@ -11,12 +11,12 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
-    <!--Slick-->
+   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
           rel="stylesheet" type="text/css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
           rel="stylesheet" type="text/css"/>
-    <!--SLICK SLIDER-->
+  
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
           rel="stylesheet" type="text/css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
@@ -233,6 +233,116 @@
   </div>
 </section>
 <!--TOP DEALS ENDS-->
+
+<!--ORDER START-->
+
+section id="order">
+  <div id="makeOrder" class="container">
+      <div class="row form">
+          <h2 class="text-white text-center">YOU CAN ORDER NOW !!!!!!!!</h2>
+          <div class="col-md-6"><br><br>
+              <div class="form-group"><br>
+                  <label for="name">Pizza Type</label>
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="type">
+                      <option selected>---</option>
+                      <option value="0">Pepperoni</option>
+                      <option value="1">Buffallo</option>
+                      <option value="2">Margherita</option>
+                      <option value="3">BBQ chicken</option>
+                      <option value="4">Hawaiian</option>
+                      <option value="5">Supreme</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="name">Size</label>
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="size">
+                      <option selected>---</option>
+                      <option value="0">Small</Small></option>
+                      <option value="1">Medium</option>
+                      <option value="2">Large</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="name">Crust</label>
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crust">
+                      <option selected>---</option>
+                      <option value="0">Hand-Tossed @100/=</Small></option>
+                      <option value="1">Stuffed @50/=</option>
+                      <option value="2">Thin @200/=</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="name">Toppings</label>
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="topping">
+                      <option selected>---</option>
+                      <option value="0">Extra cheese @300/=</Small></option>
+                      <option value="1">Ground beef @50/=</option>
+                      <option value="2">Bacon @200/=</option>
+                      <option value="3">Green Pepper @100/=</option>
+                  </select>
+              </div>
+              
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="name">Quantity</label>
+                  <input type="number" class="form-control form-select-lg mb-3" name="" id="quantity">
+
+              </div>
+              <div class="form-group">
+                  <label for="name">Enter name</label>
+                  <input type="text" class="form-control form-select-lg mb-3" name="" id="name">
+              </div>
+              <div class="form-group radioBtn">
+                  <label for="deliver">Want Delivery????</label>
+                  <div>
+                      <input type="radio" id="yes" name="deliver">
+                      <label for="no">Yes</label>
+                      <br>
+                      <input type="radio" id="no" name="deliver">
+                      <label for="no">No</label>
+                  </div>
+              </div>
+              <div class="form-group location">
+                  <label for="name"> Enter Location for delivery</label>
+                  <input type="text" class="form-control form-select-lg mb-3" name="" id="location">
+              </div>
+          </div>
+          
+      </div>
+      <div class="form-group">
+        <input class="btn btn-danger" type="button" id="addToCart" value="Proceed">
+    </div>
+      <div class="displayOrder table-responsive container">
+          <table class="table">
+              <thead class="table-primary">
+                  <th>Flavor</th>
+                  <th>Size</th>
+                  <th>Crust</th>
+                  <th>Toppings</th>
+                  <th>Quantity</th>
+                  <th id="billPerOrder">Total</th>
+              </thead>
+              <tr></tr>
+              <tbody>
+              </tbody>
+          </table>
+          <div>
+              <div class="form-group">
+                  <p id="bill"><span id="result"></span></p>
+                  <p id="bill"> <span id="totalCost"></span></p>
+              </div>
+             
+          </div>
+          <div class="form-group">
+            <input class="btn btn-danger" type="button" id="checkout" value="Done!">
+        </div>
+      </div>
+      
+  </div>
+</section>
+
+<!--ORDER ENDS-->
 
 
   <script src="sweetalert2/dist/sweetalert2.min.js"></script>

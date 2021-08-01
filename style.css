@@ -228,3 +228,45 @@ td{
   font-weight: 700;
 
 }
+
+/* footer */
+
+.right-content,
+.top-brand {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-1 {
+  padding-top: 6rem;
+  background-color: #0c0b0c;
+}
+.footer-1 .brand {
+  font-family: "Pacifico", cursive;
+}
+.footer-1 .social a:hover {
+  text-decoration: none;
+}
+.footer-1 .footer-brand {
+  font-size: 2rem;
+}
+.footer-1 .footer-brand li {
+  padding-right: 10px;
+}
+.footer-1 .accepted-payments li,
+.footer-1 .footer-brand li {
+  display: inline;
+  color: #e7282e;
+}
+.footer-1 .text-muted {
+  color: #f3ecf2 !important;
+}
+.footer-1 .designer a {
+  color: #f7f2f6;
+}
+
+@media (min-width: 576px) {
+  .footer-1 .designer {
+    float: right;
+  }
+ }

@@ -56,3 +56,27 @@ Order.prototype.getSize = function () {
     return false;
   }
 };
+
+// prototypes for crust and toppings prices.
+
+Order.prototype.getCrust = function () {
+  if (this.crust === 0) {
+    return 100;
+  } else if (this.crust === 1) {
+    return 50;
+  } else if (this.crust === 2) {
+    return 200;
+  }
+};
+
+Order.prototype.getTopping = function () {
+  if (this.topping === 0) {
+    return 300;
+  } else if (this.topping === 1) {
+    return 50;
+  } else if (this.topping === 2) {
+    return 200;
+  } else if (this.topping === 3) {
+    return 100;
+  }
+};

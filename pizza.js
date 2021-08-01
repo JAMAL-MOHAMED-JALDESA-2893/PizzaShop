@@ -80,3 +80,31 @@ Order.prototype.getTopping = function () {
     return 100;
   }
 };
+
+function fullBill() {
+  var sum = 0;
+  $(".billPerOrder").each(function () {
+    var value = $(this).text();
+    if (!isNaN(value) && value.length != 0) {
+      sum += parseFloat(value);
+    }
+  });
+  if (document.getElementById("yes").checked) {
+    var result =
+      "Your order is Ksh. " + sum + " with a delivery fee of Ksh. 200 ";
+    var orderBill = sum + 200;
+    var total = "Total: Ksh. " + orderBill + " .00";
+    $("#result").text(result);
+    $("#totalCost").text(total);
+
+    swal({
+      title:
+        "Your order will be delivered to your Location at a fee of 200 shillings",
+      icon: "success",
+    });
+  } else {
+    var total = "Total: Ksh. " + sum + " .00";
+    $("#totalCost").text(total);
+  }
+}
+

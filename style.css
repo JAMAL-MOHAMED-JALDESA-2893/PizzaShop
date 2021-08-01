@@ -1,4 +1,7 @@
-
+ html,
+ body{
+   height: 100%;
+ }
 
 .carousel-item {
 	height: 100vh;
@@ -82,13 +85,17 @@
 }
 
 .home-top-deals-3 {
-  background-color: #281926a6;
-  height: 80vh;
+  background-color: black;
+  height: 70vh;
   width: 100vw;
-  padding-top: 6rem;
+  padding-top: 5rem;
   padding-bottom: 6rem;
-  border-bottom: 1px solid #281926;
+  color: white;
+  border-bottom: 1px solid #f7f1f6;
 }
+
+
+
 .home-top-deals-3 img {
   height: 120px;
   width: 120px;
@@ -102,10 +109,11 @@
 }
 .home-top-deals-3 .carousel-control-next,
 .home-top-deals-3 .carousel-control-prev {
-  opacity: 0.7;
+  opacity: 1;
   width: 0%;
   color: #281926;
   position: absolute;
+  z-index: 100;
 }
 
 .jumbotron2 {
@@ -142,3 +150,14 @@
   opacity: 0.2;
   z-index: 1;
 }
+
+.order{
+  height: 90vh;
+  width: 100%;
+  background-color: blue;
+}
+
+@media (max-width: 992px) {
+  .home-top-deals {
+    height: 120vh;
+  }

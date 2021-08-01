@@ -57,7 +57,6 @@ Order.prototype.getSize = function () {
   }
 };
 
-// prototypes for crust and toppings prices.
 
 Order.prototype.getCrust = function () 
 
@@ -97,7 +96,7 @@ Order.prototype.getTopping = function ()
   }
 };
 
-// bill yako function for full bill
+
 
 function billYako() {
   var sum = 0;
@@ -139,3 +138,67 @@ function checkout() {
       location.reload();
   });
 }
+
+$(document).ready(function () {
+
+  $('#checkout').click(function () {
+    checkout();
+})
+  
+  $('.radioBtn').change(function () {
+      if (document.getElementById("yes").checked) {
+          $('.location').show();
+      } else {
+          $('.location').hide();
+      }
+  });
+
+  $('#addToCart').click(function () {
+      var type = $('#type option:selected').val();
+      var size = $('#size option:selected').val();
+      var crust = $('#crust option:selected').val();
+      var quantity = $('#quantity').val();
+      var topping = $('#topping option:selected').val();
+      var name = $('#name').val();
+
+      
+      if (type == '' || size == '' || crust == '' || topping == '' || quantity == '' || name == '') 
+      {
+        swal("Order fields empty!", "fill the order first");
+      } 
+      else if (document.getElementById("yes").checked && $('#location').val() == '')
+       {
+        swal("Location field empty!", "fill the location field first");
+      } 
+      else
+       {
+          var selectedType = parseInt($('#type option:selected').val());
+          var selectedSize = parseInt($('#size option:selected').val());
+          var selectedCrust = parseInt($('#crust option:selected').val());
+          var quantity = parseInt($('#quantity').val());
+          var selectedTopping = parseInt($('#topping option:selected').val());
+
+         
+
+          var pizzaFunga = new Order(selectedType, selectedSize, selectedCrust, selectedTopping);
+
+         
+
+          var soloPizza = (pizzaFunga.getSize() + pizzaFunga.getCrust() + pizzaFunga.getTopping()) * quantity;
+
+         
+          $('.displayOrder').show();
+          $(".table tbody:last").append("<tr>" +
+              "<td>" + $('#type option:selected').text() + "</td>" +
+              "<td>" + $('#size option:selected').text() + "</td>" +
+              "<td>" + $('#crust option:selected').text() + "</td>" +
+              "<td>" + $('#topping option:selected').text() + "</td>" +
+              "<td>" + $('#quantity').val() + "</td>" +
+              "<td><span class='billPerOrder'>" + soloPizza + "</span></td>" +
+              "<td><input type='checkbox' name='record'></td>" +
+              "</tr>");
+          $(billYako);
+      }
+  })
+  
+})

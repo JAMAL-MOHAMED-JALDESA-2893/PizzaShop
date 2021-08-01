@@ -8,7 +8,7 @@
 
  **CARMELITAS PIZZERIA** is a pizza delivery Web application that  user can be able select the pizza type, size, crust and toppings then order the pizza with the option of delivery provided to the user
 
-<img src="">
+<img src="./pizzatypes/screencapture-127-0-0-1-5500-index-html-2021-08-02-01_18_59.png">
 
 ## Setup/Installation/Usage.
 

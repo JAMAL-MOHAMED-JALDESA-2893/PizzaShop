@@ -92,6 +92,7 @@
   padding-bottom: 6rem;
   color: white;
   border-bottom: 1px solid #f7f1f6;
+  font-family: "merienda",cursive;
 }
 
 
@@ -161,3 +162,4 @@
   .home-top-deals {
     height: 120vh;
   }
+}

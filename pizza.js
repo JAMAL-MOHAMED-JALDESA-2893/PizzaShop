@@ -35,7 +35,7 @@ Order.prototype.getTopping = function () {
 Order.prototype.getSize = function () {
   if (this.type == 0) {
       if (this.size === 0) {
-          return 600
+          return 800
       } else if (this.size === 1)
           return 1000
       else {
@@ -43,43 +43,43 @@ Order.prototype.getSize = function () {
       }
   } else if (this.type == 1) {
       if (this.size === 0) {
-          return 300
-      } else if (this.size === 1)
           return 800
-      else {
-          return 2000
-      }
-  } else if (this.type == 2) {
-      if (this.size === 0) {
-          return 500
       } else if (this.size === 1)
           return 1000
       else {
-          return 2500
+          return 1500
+      }
+  } else if (this.type == 2) {
+      if (this.size === 0) {
+          return 800
+      } else if (this.size === 1)
+          return 1000
+      else {
+          return 1500
       }
   } else if (this.type == 3) {
       if (this.size === 0) {
-          return 600
+          return 800
       } else if (this.size === 1)
-          return 1500
+          return 1000
       else {
-          return 2500
+          return 1500
       }
   } else if (this.type == 4) {
       if (this.size === 0) {
-          return 500
+          return 800
       } else if (this.size === 1)
-          return 950
+          return 800
       else {
-          return 2000
+          return 1500
       }
   } else if (this.type == 5) {
       if (this.size === 0) {
-          return 400
+          return 800
       } else if (this.size === 1)
-          return 850
+          return 1000
       else {
-          return 2200
+          return 1500
       }
   } else {
       return false;
